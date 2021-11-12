@@ -465,3 +465,11 @@ p {
   height: 1px; width: 1px;
   margin: -1px; padding: 0; border: 0;
 }
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+}
+footer > a {
+  text-decoration: underline;
+}
