@@ -27,7 +27,6 @@ button {
 
 body {
   background: #f3f3f3;
-  position: relative;
 }
 
 a {
@@ -69,7 +68,8 @@ p {
  */
 
 .container {
-  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background: #f9f9f9;
   margin: 0 auto;
@@ -79,7 +79,7 @@ p {
  */
 
 .menu {
-  height: 4em;
+  padding: 10px 50px;
   background-color: #677ae4;
   background-color: #05526A;
   background-color: #e46855;
@@ -87,7 +87,6 @@ p {
 
 .menu h1 {
   position: relative;
-  padding: 5px 0 0 8px;
   color: #f9f9f9;
   font-size: 1.8em;
   font-style: italic;
@@ -424,6 +423,18 @@ p {
   }
 }
 
+@media only screen and (max-width: 919px) {
+  .menu {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
 /**
  * Utilities
  */
@@ -470,12 +481,8 @@ p {
 footer {
   text-align: center;
   margin-bottom: 10px;
-  position: absolute;
-  bottom: 0;
-  overflow: hidden;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  margin-top: auto;
 }
 footer > a {
   text-decoration: underline;
