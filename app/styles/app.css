@@ -470,7 +470,7 @@ p {
 footer {
   text-align: center;
   margin-bottom: 10px;
-  position: relative;
+  position: absolute;
   bottom: 0;
   overflow: hidden;
   width: 100%;
