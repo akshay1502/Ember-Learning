@@ -1,0 +1,11 @@
+{{page-title "Testing"}}
+<div class="userCard" id="testing">
+  <table class="user">
+    {{#each @model as |user|}}
+      <tr>
+        <td style="width: 150px;">{{user.symbol}}</td>
+        <td>{{user.priceChange}}</td>
+      </tr>
+    {{/each}}
+  </table>
+</div>
